@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>company | 組み立て式モジュラーテーブル</title>
+    <title>東洋総合商事 | 組み立て式モジュラーテーブル</title>
     <meta name="description" content="レゴのように自由に組み立てられる、高品質な木製モジュラーテーブル。日本の住まいに合わせた洗練されたデザイン。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Manrope:wght@300;400;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,9 +22,9 @@
     <header class="header js-header">
         <div class="header-inner">
             <h1 class="logo">
-                <a href="#">template</a>
+                <a href="#">東洋総合商事</a>
             </h1>
-            <nav class="global-nav">
+            <nav class="global-nav desktop-only">
                 <ul>
                     <li><a href="#concept">Concept</a></li>
                     <li><a href="#features">Features</a></li>
@@ -31,98 +33,91 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn js-mobile-menu-btn">
-                <span></span>
-                <span></span>
+            <button class="mobile-menu-btn js-mobile-menu-btn" aria-label="Menu">
+                <span class="material-symbols-outlined"
+                    style="color: var(--color-accent); font-weight: 300;">menu</span>
             </button>
         </div>
     </header>
 
     <!-- Floating Shopify Button -->
     <a href="https://2tzgcf-pf.myshopify.com/" class="shopify-button" target="_blank" rel="noopener noreferrer">
-        <span class="shopify-button-text">Online Store</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-shopping-cart">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
+        <span class="material-symbols-outlined font-light">shopping_cart</span>
     </a>
 
     <main>
         <!-- Hero Section -->
         <section class="hero full-bleed">
             <div class="hero-image-container">
-                <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                    alt="美しい木製のダイニングテーブル" class="hero-image">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD96rYCw8Pa1XwahqrifCl5l-P5xxjhXg7p-AfF2QSz7vGcpKOjeCAhAd5TBRn58fp5cM9io38zWn_HKkEKG9NJoWB-zPy3S-01A9V7NbSBDCN0E6kYtXernauM3SyKi3RXtBJW7q84DN4RhAPzCd9--4lD_Sv73smn9XU_MZwVv8QDpS4wsYua5iauwfvl9HW7Xqj-OVGuSLeEBi3Md219rG3N-RwZHp12qPCCbhK4eUAxjDOWpjYd8a7cBLGjvw25ZzlNOXzKcPwe"
+                    alt="Minimalist modular table in a bright Japanese apartment" class="hero-image">
+                <div class="hero-overlay"></div>
             </div>
             <div class="hero-content">
                 <h2 class="hero-title fade-in-up">
-                    空間を創る、<br>
-                    無限の可能性。
+                    空間を創る、無限の可能性。
                 </h2>
-                <p class="hero-subtitle fade-in-up" style="transition-delay: 0.1s;">レゴのように組み立てる、新感覚の木製モジュラーテーブル</p>
-                <a href="#features" class="btn btn-primary fade-in-up" style="transition-delay: 0.2s;">詳しく見る</a>
+                <a href="#features" class="btn btn-outline-hero fade-in-up" style="transition-delay: 0.2s;">詳しく見る</a>
             </div>
         </section>
 
         <!-- Concept Section -->
         <section id="concept" class="section concept-section">
-            <div class="container">
-                <div class="concept-grid">
-                    <div class="concept-text fade-in-up js-scroll-animation">
-                        <span class="section-label">Concept</span>
-                        <h3 class="section-title">暮らしに合わせて<br>形を変える。</h3>
-                        <p class="section-description">
-                            ライフステージの変化、引っ越し、あるいは日々の気分に合わせて。<br>
-                            私たちは、工具を一切使わず、誰でも簡単に組み立て・分解・拡張ができる革新的なテーブルシステムを開発しました。<br>
-
-                        </p>
+            <div class="container container-narrow">
+                <div class="section-header-center fade-in-up js-scroll-animation">
+                    <span class="section-label-minimal">Philosophy</span>
+                    <h3 class="section-title-minimal">Modular Excellence</h3>
+                </div>
+                <div class="concept-layout fade-in-up js-scroll-animation">
+                    <div class="concept-image-minimal">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNkeFfHorpZie39LJ0kunYW-K7ujQx3U9kO1MA_BKjL89Q_H5YwOTLR42LyFwzWvf5uHh4ExDdtvxlOX18PknYHhwtGvvdqa-c0E1KKZWNuUvEirf48-DK8ZuxY0GBr3wQYx6qyJhBpW4IZecK59BWTZ9inRvG-vI8pyuZT74LMZ9nkcxsbcohYkW2Ebdj7m7mIB5kITTdELbnkmbHZXoOyloxDGDP9f7tsPvHXY9GGuZOtMe48MEFSP96P4FY25GBybv5YTVY0LyL"
+                            alt="Wood grain texture" class="grayscale">
                     </div>
-                    <div class="concept-image fade-in-up js-scroll-animation" style="transition-delay: 0.2s;">
-                        <img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                            alt="細部までこだわった木目の美しさ"
-                            style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+                    <div class="concept-text-minimal">
+                        <p class="minimal-text">
+                            東洋総合商事が提案するのは、単なる家具ではありません。生活の変化に合わせて形を変える、呼吸する木材のシステムです。
+                        </p>
+                        <p class="minimal-text">
+                            日本の伝統的な建築美と、現代のエンジニアリングが融合した「Foundation Series」。道具を一切使わずに、あなたの理想の空間を構築します。
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="section features-section bg-light">
-            <div class="container">
-                <div class="section-header center fade-in-up js-scroll-animation">
-                    <span class="section-label">Features</span>
-                    <h3 class="section-title">組み立て式モジュラー構造の魅力</h3>
+        <section id="features" class="section features-section bg-alt">
+            <div class="container container-wide">
+                <div class="section-header-center fade-in-up js-scroll-animation">
+                    <span class="section-label-minimal">Core Values</span>
                 </div>
 
-                <div class="features-grid">
-                    <div class="feature-card fade-in-up js-scroll-animation">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="パズルのような継手">
+                <div class="features-grid-minimal">
+                    <div class="feature-card-minimal fade-in-up js-scroll-animation">
+                        <div class="feature-image-minimal">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN3uhwCfXZv_Q1T_O2BuoPBOtgx4iWXg2AeI4mcUungwpDDENA2ji5OHuYWjDfrhhz7FFi7HSSiw4Z6qtVULpThlT9whH062lcd_b5vld74GKouZLsQq8x_rAvOzrcZdKlTcVXLSU3EgQKBtE1w6Kdk1fjOjuZyPjso9HTM2fMnDA0ummNtacmI1VflEmG3P1JZZjZVY_N1B-fF4Cksa6vAxs6IOujDwtAxTpp-WWMix8uA0SUeGiUJ1GU5faL4XnHUvntCpI6Ls8N"
+                                alt="無垢の接合">
                         </div>
-                        <h4 class="feature-title">工具不要のジョイント</h4>
-                        <p class="feature-description">釘やネジを使わず、レゴブロックのようにパーツをはめ込むだけのシンプル構造。引っ越し時もコンパクトに収納可能です。</p>
+                        <h4 class="feature-title-minimal">無垢の接合</h4>
+                        <p class="feature-description-minimal">特殊な嵌合構造により、工具を一切使わず組み立て・解体が可能です。</p>
                     </div>
 
-                    <div class="feature-card fade-in-up js-scroll-animation" style="transition-delay: 0.1s;">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="拡張されるテーブル">
+                    <div class="feature-card-minimal fade-in-up js-scroll-animation" style="transition-delay: 0.1s;">
+                        <div class="feature-image-minimal">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqmskwDshvtbldb2I8NvH5Nv4BhwSu5yc05K7ECRDmsltwAkYtj789ZpUQivbyEFKCZ0EtmhpRSetAd4wSvt5fGoaIkOFtzlzHduh8wlHtE_mmwEXRV_1y1sekwp8SmzxPJ_EZYzLEXzNZgzSdUCup5kCAWLy_hVF8xVPlWmEbZeYrMrzvvEsa2ZcKVQD77YLcfFmQJqwimq6XbGDdfXymOVlvQtlrQZZ0ULfyC64iMS9DFLW7i15l2_gwbGXVLvSOAJ1999uGZcjp"
+                                alt="無限の拡張">
                         </div>
-                        <h4 class="feature-title">無限の拡張性</h4>
-                        <p class="feature-description">専用のモジュールパーツを追加することで、1人用デスクから大人数用ダイニングテーブルまで、サイズを自由に変更できます。</p>
+                        <h4 class="feature-title-minimal">無限の拡張</h4>
+                        <p class="feature-description-minimal">モジュールを追加することで、デスクからダイニングまで拡張自在です。</p>
                     </div>
 
-                    <div class="feature-card fade-in-up js-scroll-animation" style="transition-delay: 0.2s;">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="上質な木材">
+                    <div class="feature-card-minimal fade-in-up js-scroll-animation" style="transition-delay: 0.2s;">
+                        <div class="feature-image-minimal">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcaa2WAwpSiLtZT8PPS9CeRLV2DFoKGGOnsSnQeL1vaZP7A7Sd7n56DBijGcZ0W1LKM7A5TYJQoFVA8PW8Gf84OeM16cZxDI0MvWf5GbiFyrRhNn9o460NidH9rluQFgMQqRfhCgjFYUCJ46fWYtL0MIEEcPU4y2V0vRtHivYAmSZxAs4aVpN1tTvVTJ3hZ80ZIjhqNALBEjUQJlZAallm-UGOfpeNPMsUI5803sjkE_vTVbfSFcG7C-WtY68SY5e-AQV1ocYjJopI"
+                                alt="厳選された素材">
                         </div>
-                        <h4 class="feature-title">上質な無垢材</h4>
-                        <p class="feature-description">厳選された高品質な木材を使用。使うほどに味わいが増し、日々の生活に温もりをもたらします。</p>
+                        <h4 class="feature-title-minimal">厳選された素材</h4>
+                        <p class="feature-description-minimal">最高級の無垢材のみを使用し、経年変化を愉しめます。</p>
                     </div>
                 </div>
             </div>
@@ -130,32 +125,34 @@
 
         <!-- Product Highlight Section -->
         <section id="products" class="section product-highlight">
-            <div class="container">
-                <div class="highlight-wrapper">
-                    <div class="highlight-image fade-in-up js-scroll-animation">
-                        <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                            alt="モジュール式ワークデスク">
-                    </div>
-                    <div class="highlight-content fade-in-up js-scroll-animation">
-                        <h3 class="highlight-title">The Foundation Series</h3>
-                        <p class="highlight-text">
-                            基本となるモジュールキット。脚、天板、コネクタが含まれており、様々な形状に組み合わせることができます。ミニマルなデザインはどんな空間にも自然に溶け込みます。
-                        </p>
-                        <a href="https://2tzgcf-pf.myshopify.com/" class="btn btn-outline" target="_blank"
-                            rel="noopener noreferrer">オンラインストアで購入</a>
+            <div class="container container-narrow center">
+                <div class="section-header-center fade-in-up js-scroll-animation">
+                    <span class="section-label-minimal">Collections</span>
+                    <h3 class="section-title-minimal">Foundation Series</h3>
+                </div>
+
+                <div class="product-poster fade-in-up js-scroll-animation">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA81BSc9cV8JP90f5D-L0udPf5de1cB4tnZ0o0OJEeYwt4Q-UM7PgxCBwLek6CWUpfcZlrRia8Ll1NcRkFPVYoTe-f3tZdmMpSyGhSxCadW7KymZyw32GSCn0lhBrl9x2yudV4Dx4FTCzCCWFuAazuMmyxWihuyM5jrSLClH6vrpre4Dy8HAMdngf-1LKROSouEcfzx7E2rEmfqm8i49Z5a2xkAfBPGG16wshJT-QBSEA2_6aW6m8RK6Ausx2FCbXA2kHpQ-aCViweb"
+                        alt="Main product table">
+                    <div class="product-poster-overlay"></div>
+                    <div class="product-poster-content">
+                        <p class="product-poster-label">Alpha Desk</p>
+                        <h4 class="product-poster-title">Foundation Alpha</h4>
+                        <a href="https://2tzgcf-pf.myshopify.com/" class="btn-poster" target="_blank"
+                            rel="noopener noreferrer">VIEW PRODUCT</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- About Company Section -->
-        <section id="company" class="section info-section">
-            <div class="container">
+        <section id="company" class="section info-section bg-alt">
+            <div class="container container-narrow">
                 <div class="info-container fade-in-up js-scroll-animation">
-                    <span class="section-label">Company</span>
-                    <h3 class="section-title">companyについて</h3>
-                    <div class="info-content">
-                        <p>companyは、品質と革新性を追求し、優れたプロダクトを世界中から発掘しています。私たちが提供するモジュラーテーブルシステムは、日本の洗練されたデザイン美学が融合した新しい家具の形です。
+                    <span class="section-label-minimal">Company</span>
+                    <h3 class="section-title-minimal">東洋総合商事について</h3>
+                    <div class="info-content-minimal">
+                        <p>東洋総合商事は、品質と革新性を追求し、優れたプロダクトを世界中から発掘しています。私たちが提供するモジュラーテーブルシステムは、日本の洗練されたデザイン美学が融合した新しい家具の形です。
                         </p>
                     </div>
                 </div>
@@ -163,34 +160,33 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section contact-section bg-light">
-            <div class="container">
-                <div class="section-header center fade-in-up js-scroll-animation">
-                    <span class="section-label">Contact</span>
-                    <h3 class="section-title">お問い合わせ</h3>
-                    <p class="section-description">商品やオンラインストアに関するご質問など、お気軽にお問い合わせください。</p>
+        <section id="contact" class="section contact-section">
+            <div class="container container-narrow">
+                <div class="section-header-center fade-in-up js-scroll-animation">
+                    <span class="section-label-minimal">Contact</span>
+                    <h3 class="section-title-minimal">お問い合わせ</h3>
                 </div>
                 <div class="contact-form-container fade-in-up js-scroll-animation">
-                    <form action="https://formspree.io/f/xkovyodd" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">*</span></label>
+                    <form action="https://formspree.io/f/xkovyodd" method="POST" class="contact-form-minimal">
+                        <div class="form-group-minimal">
+                            <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="山田 太郎">
                         </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">*</span></label>
+                        <div class="form-group-minimal">
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required placeholder="info@example.com">
                         </div>
-                        <div class="form-group">
-                            <label for="subject">件名</label>
+                        <div class="form-group-minimal">
+                            <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="商品の詳細について">
                         </div>
-                        <div class="form-group">
-                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="6" required
+                        <div class="form-group-minimal">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required
                                 placeholder="ご質問やご要望をご記入ください。"></textarea>
                         </div>
                         <div class="form-submit center">
-                            <button type="submit" class="btn btn-primary">送信する</button>
+                            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>
@@ -199,45 +195,22 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer-minimal">
         <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#" class="footer-logo">company</a>
-                    <p class="footer-message">暮らしを組み立てる、<br>新しいスタンダード。</p>
-                </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Shop</h4>
-                        <ul>
-                            <li><a href="#">すべての商品</a></li>
-                            <li><a href="#">拡張パーツ</a></li>
-                            <li><a href="#">組み立てガイド</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Information</h4>
-                        <ul>
-                            <li><a href="#">会社概要</a></li>
-                            <li><a href="#">お問い合わせ</a></li>
-                            <li><a href="#">よくある質問</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Social</h4>
-                        <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                        </ul>
-                    </div>
+            <div class="footer-top-minimal center">
+                <h2 class="footer-logo-minimal">東洋総合商事</h2>
+                <div class="footer-nav-minimal">
+                    <a href="#concept">Concept</a>
+                    <a href="#features">Features</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 company. All Rights Reserved.</p>
-                <div class="legal-links">
-                    <a href="#">プライバシーポリシー</a>
-                    <a href="#">特定商取引法に基づく表記</a>
+            <div class="footer-bottom-minimal">
+                <p>&copy; 2026 TOYO SOGO SHOJI. ALL RIGHTS RESERVED.</p>
+                <div class="social-icons-minimal">
+                    <span class="material-symbols-outlined font-light">language</span>
+                    <span class="material-symbols-outlined font-light">camera</span>
                 </div>
             </div>
         </div>
