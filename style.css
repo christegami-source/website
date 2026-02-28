@@ -848,3 +848,63 @@ img {
         margin-bottom: 24px;
     }
 }
+
+/* Container que define a área da imagem e permite o posicionamento absoluto do texto */
+.concept-visual-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Alinhado com o design minimalista */
+    margin: 40px auto 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.concept-visual-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter var(--transition-medium), transform var(--transition-slow);
+}
+
+/* Camada da descrição (escondida por padrão) */
+.description-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%); /* Começa levemente abaixo para o efeito de subida */
+    width: 85%;
+    text-align: center;
+    z-index: 5;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+.description-overlay .minimal-text {
+    color: var(--color-white); /* Texto branco para contraste sobre a imagem escura */
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- EFEITO DE HOVER --- */
+
+/* Escurece a imagem para destacar o texto */
+.concept-visual-container:hover img {
+    filter: brightness(0.4) grayscale(0%);
+    transform: scale(1.03);
+}
+
+/* Faz a descrição aparecer e subir para o centro */
+.concept-visual-container:hover .description-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+/* Ajuste para garantir que a grid original não quebre o novo layout */
+.concept-layout {
+    display: block; /* Alterado de grid para block para focar no novo container centralizado */
+}
