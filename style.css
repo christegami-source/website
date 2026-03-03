@@ -24,6 +24,7 @@ html {
     --header-height: 80px;
 
     /* Transitions */
+    --transition-fast: 0.3s ease;
     --transition-medium: 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -97,18 +98,15 @@ img {
     z-index: 1000;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Semi-transparent white */
-    backdrop-filter: blur(10px);
-    /* Modern glass effect */
-    -webkit-backdrop-filter: blur(10px);
+    background-color: var(--color-bg);
     transition: all 0.4s ease;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
@@ -126,12 +124,8 @@ img {
     font-weight: 300;
     letter-spacing: 0.6em;
     /* Increased spacing as in user sample image */
-    color: var(--color-white);
-    transition: color 0.3s ease;
-}
-
-.header.scrolled .logo a {
     color: var(--color-text);
+    transition: color 0.3s ease;
 }
 
 .global-nav {
@@ -160,13 +154,9 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-text);
     transition: color 0.3s ease;
     position: relative;
-}
-
-.header.scrolled .global-nav a {
-    color: var(--color-text);
 }
 
 .global-nav a::after {
@@ -295,23 +285,13 @@ img {
     /* White subtitle */
 }
 
-/* Header interactions over dark hero */
+/* Header interactions over dark hero - Fixed to Siempre Blanco */
 .header {
-    background-color: transparent;
+    background-color: var(--color-bg);
 }
 
 .header-inner {
     transition: var(--transition-medium);
-}
-
-.header:not(.scrolled) .logo a,
-.header:not(.scrolled) .global-nav a {
-    color: var(--color-text);
-    text-shadow: none;
-}
-
-.header:not(.scrolled) .global-nav a::after {
-    background-color: var(--color-text);
 }
 
 /* Minimalist Layout Utility Classes */
